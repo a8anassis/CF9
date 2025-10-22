@@ -11,7 +11,7 @@ public class AddApp {
         // Δήλωση και αρχικοποίηση μεταβλητών
         int num1 = 500_000;
         int num2 = 10_000;
-        int result;
+        int result = 0;
 
         // Εντολές
         result = num1 + num2;
