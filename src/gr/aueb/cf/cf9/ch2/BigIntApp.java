@@ -11,7 +11,7 @@ public class BigIntApp {
     public static void main(String[] args) {
         BigInteger bigNum1 = new BigInteger("123456789314324324");
         BigInteger bigNum2 = new BigInteger("98765432454542543251");
-        BigInteger bigResult = BigInteger.ZERO;
+        BigInteger bigResult;
 
         bigResult = bigNum1.add(bigNum2);
 
