@@ -18,6 +18,6 @@ public class KiloToGrams {
         weightInKilograms = scanner.nextInt();
         weightInGrams = weightInKilograms * KILOGRAMS_TO_GRAMS;
 
-        System.out.printf("Το βάρος σε γραμμάρια των %d κιλών είναι: %d, γραμμάρια", weightInKilograms, weightInGrams);
+        System.out.printf("Το βάρος σε γραμμάρια των %d κιλών είναι: %,d γραμμάρια", weightInKilograms, weightInGrams);
     }
 }
