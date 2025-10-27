@@ -20,7 +20,7 @@ public class SnowingApp {
         System.out.println("Παρακαλώ εισάγετε τη θερμοκρασία");
         temperature = scanner.nextInt();
 
-        isSnowing = isRaining && (temperature < 0);
+        isSnowing = isRaining && (temperature < 0);     // Short-Circuit Operator
 
         System.out.println("Is Snowing: " + isSnowing);
     }
