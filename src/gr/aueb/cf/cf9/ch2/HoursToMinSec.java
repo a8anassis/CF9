@@ -14,6 +14,8 @@ import java.util.Scanner;
 public class HoursToMinSec {
 
     public static void main(String[] args) {
+
+        // Δήλωση και αρχικοποίηση μεταβλητών
         Scanner scanner = new Scanner(System.in);
         final int HOURS_TO_MINUTES = 60;
         final int HOURS_TO_SECONDS = 3600;
@@ -21,11 +23,16 @@ public class HoursToMinSec {
         int minutes = 0;
         int seconds = 0;
 
+        // Εντολές
+        // Πάρε input από τον χρήστη -- data binding
         System.out.println("Please insert the number of hours:");
         hours = scanner.nextInt();
+
+        // Επεξεργάσου το input -- expressions
         minutes = hours * HOURS_TO_MINUTES;
         seconds = hours * HOURS_TO_SECONDS;
 
+        // Δώσε στον χρήστη το αποτέλεσμα
         System.out.printf(Locale.US, "The number of minutes is: %,d\n", minutes);
         System.out.printf(Locale.forLanguageTag("el"), "The number of seconds is: %,d\n", seconds);
     }
