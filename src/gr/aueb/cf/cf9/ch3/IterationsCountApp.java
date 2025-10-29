@@ -21,10 +21,10 @@ public class IterationsCountApp {
         num = scanner.nextInt();
 
        // Επεξεργασία - while-do
-        while (num != -1) {
+        while ((num = scanner.nextInt()) != -1) {
             iterations++;
             System.out.println("Please enter a number:");
-            num = scanner.nextInt();
+            // num = scanner.nextInt();
         }
 
         // Εκτύπωση Αποτελεσμάτων
