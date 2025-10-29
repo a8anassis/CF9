@@ -17,12 +17,20 @@ public class SecretIterativeApp {
             System.out.println("Please guess the secret number: ");
             num = scanner.nextInt();
 
-            if (num == SECRET) {
-                System.out.println("You guessed the secret number!");
-                break;
-            } else {
-                System.out.println("Try again!");
+//            if (num == SECRET) {
+//                System.out.println("You guessed the secret number!");
+//                break;
+//            } else {
+//                System.out.println("Try again!");
+//            }
+
+            if (num != SECRET) {
+                System.out.println( "Try again!");
+                continue;
             }
+
+            System.out.println("You guessed the secret number!");
+            break;
         }
     }
 }
