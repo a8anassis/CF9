@@ -21,7 +21,8 @@ public class LeapYearApp {
             isLeap = true;
         }*/
 
-        isLeap = year % 400 == 0 || (year % 4 != 0 && year % 100 != 0);
+        isLeap = year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
+        // isLeap = year % 4 == 0 && (year % 100 != 0 || year % 400 == 0);
 
         System.out.println("Year: " + year + " is leap: " + isLeap);
     }
