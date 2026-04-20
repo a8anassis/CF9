@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 
 public class StrongPassword {
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         String s = "C0d1ngF@@ct0ry";
 
         Pattern pattern = Pattern.compile("(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*])^.{12,}$");
