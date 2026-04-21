@@ -26,12 +26,7 @@
                 System.out.println("4. Αναζήτηση");
                 System.out.println("5. Έξοδος");
                 System.out.print("Δώστε επιλογή: ");choice = in.nextInt();
-    
-                if (choice <= 0 || choice >= 6) {
-                    System.out.println("Λάθος Επιλογή");
-                    continue;
-                }
-    
+
                 if (choice == 5) {
                     System.out.println("Έξοδος..");
                     break;
@@ -43,7 +38,9 @@
                     System.out.println("Διαγραφή");
                 } else if (choice == 3) {
                     System.out.println("Ενημέρωση");
-                } else {  // choice == 4
+                } else if (choice == 4) {  
                     System.out.println("Αναζήτηση");
+                } else {
+                     System.out.println("Μη αποδεκτή επιλογή");}
                 }
             }
